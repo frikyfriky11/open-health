@@ -24,7 +24,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr v-for="measurement in measurements">
+    <tr v-for="measurement in measurements.sort((a,b) => new Date(b.date) - new Date(a.date))">
       <td class="text-left px-1 py-1">{{ DateTime.fromISO(measurement.date).setLocale('en').toRelative() }}</td>
       <td class="text-right px-1 py-1">{{ measurement.glucose }}</td>
     </tr>
