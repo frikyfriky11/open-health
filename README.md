@@ -35,6 +35,14 @@ Fork it, branch it, pull it, commit it, you don't even need to mention me if you
 
 # Technical stuff
 
+## Aesthetics considerations
+
+The font used is [Titillium Web](http://nta.accademiadiurbino.it/titillium/) made available by Accademia di Belle Arti di Urbino. I chose this font because it's been used widely in the italian public authority as a highly readable font, even for people with minor visual impairments. Plus, it looks very nice and clean.
+
+The graphic is very minimal and clean, with a light shade of gray as the main color in order to convey the clean look of hospital structures and clinics and to give a high contrast ratio for a high readability index.
+
+This interface has been designed with non-tech people in mind as a use-target, so it has very little distracting elements and very clear and simple to understand text, explaining everything in detail but remaining short.
+
 ## Tech stack
 
 This piece of software has been written using Vue 3 with Vite as a local dev server, using Typescript as the main language.
