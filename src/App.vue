@@ -1,5 +1,5 @@
 <template>
-  <main class="p-8 bg-gray-100 text-gray-800 min-h-screen">
+  <main class="p-8 pb-32 bg-gray-100 text-gray-800 min-h-screen">
     <router-view></router-view>
     <footer class="block fixed inset-x-0 bottom-0 bg-gray-200 flex">
       <template v-for="link in navLinks">
