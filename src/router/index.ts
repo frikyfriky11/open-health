@@ -14,7 +14,7 @@ const router = createRouter({
         { path: 'profile/blood', component: () => import('../pages/ProfileBlood.vue') },
         { path: 'profile/glucose', component: () => import('../pages/ProfileGlucose.vue') },
         { path: 'profile/mood', component: () => import('../pages/ProfileMood.vue') },
-        { path: 'about', component: () => import('../pages/About.vue') },
+        { path: 'research', component: () => import('../pages/Research.vue') },
       ]
     },
   ]

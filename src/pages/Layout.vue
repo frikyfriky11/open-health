@@ -19,13 +19,13 @@
 <script lang="ts" setup>
 import HomeIcon from '../components/icons/HomeIcon.vue';
 import ChartIcon from '../components/icons/ChartIcon.vue';
-import InfoIcon from '../components/icons/InfoIcon.vue';
+import BeakerIcon from '../components/icons/BeakerIcon.vue';
 import UserIcon from '../components/icons/UserIcon.vue';
 
 const navLinks = [
   { to: '/home', label: 'Home', icon: HomeIcon },
   { to: '/insights', label: 'Insights', icon: ChartIcon },
   { to: '/profile', label: 'Profile', icon: UserIcon },
-  { to: '/about', label: 'About', icon: InfoIcon },
+  { to: '/research', label: 'Research', icon: BeakerIcon },
 ];
 </script>
