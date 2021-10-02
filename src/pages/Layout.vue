@@ -8,7 +8,7 @@
     <footer class="block fixed inset-x-0 bottom-0 bg-gray-200 flex">
       <template v-for="link in navLinks">
         <router-link active-class="bg-blue-200 text-blue-500" class="p-4 min-h-4 w-full block align-middle flex flex-col items-center gap-2" :to="link.to">
-          <component :is="link.icon"></component>
+          <component :is="link.icon" class="w-5"></component>
           <span>{{ link.label }}</span>
         </router-link>
       </template>
