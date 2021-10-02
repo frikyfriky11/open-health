@@ -2,6 +2,10 @@
   <h1 class="text-4xl">
     <strong>Stefano Previato</strong>
   </h1>
+  <p>
+    Not you?
+    <router-link to="/" class="text-red-600 font-bold underline">Logout</router-link>.
+  </p>
 
   <p class="mt-8 text-gray-500">Find and enrich your own data here.</p>
   <p class="mt-2 text-gray-500">Remember that when you're adding new data, the researchers will be able to collect them and do further analysis.</p>
