@@ -9,7 +9,7 @@
 
       <input class="rounded-lg text-xl w-full border p-2 shadow" placeholder="Fiscal Code" type="text">
       <input class="rounded-lg text-xl w-full border p-2 shadow" placeholder="Password" type="password">
-      <input class="mt-4 rounded-lg text-xl w-full p-2 shadow bg-blue-500 text-gray-50 font-bold" type="submit" value="Login >">
+      <input class="mt-4 rounded-lg text-xl w-full p-2 shadow bg-blue-500 text-gray-50 font-bold disabled:opacity-50 transition transition-opacity" type="submit" value="Login >" :disabled="busy">
 
       <div>
         <!-- This should be one of the first things to implement before going live -->
@@ -29,8 +29,11 @@
 <script lang="ts" setup>
 import BeakerIcon from '../components/icons/BeakerIcon.vue';
 import { useRouter } from 'vue-router';
+import { ref } from 'vue';
 
 const router = useRouter();
+
+const busy = ref(false);
 
 async function login() {
   // Because of the limited time available, there is no real authentication check
@@ -38,8 +41,11 @@ async function login() {
   // (possibly an OAuth 2.0 flow, to follow open standards as the entire hackathon
   // is based on that)
   // Just for the sake of aesthetics, here we simulate some kind of API call delay
+  busy.value = true;
+
   setTimeout(async () => {
     await router.push('/home');
+    busy.value = false;
   }, 500)
 }
 </script>
