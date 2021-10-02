@@ -14,7 +14,7 @@
 
   <div class="grid grid-cols-2 gap-4">
     <GridButton :icon="HeartIcon" color="bg-red-500" label="Blood" link="/profile/blood"></GridButton>
-    <GridButton :icon="CakeIcon" color="bg-blue-500" label="Glucose" link="/"></GridButton>
+    <GridButton :icon="CakeIcon" color="bg-blue-500" label="Glucose" link="/profile/glucose"></GridButton>
     <GridButton :icon="FaceIcon" color="bg-green-500" label="Mood" link="/"></GridButton>
   </div>
 </template>
