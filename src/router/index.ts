@@ -8,6 +8,7 @@ const router = createRouter({
     { path: '/profile', component: () => import('../pages/Profile.vue') },
     { path: '/profile/blood', component: () => import('../pages/ProfileBlood.vue') },
     { path: '/profile/glucose', component: () => import('../pages/ProfileGlucose.vue') },
+    { path: '/profile/mood', component: () => import('../pages/ProfileMood.vue') },
     { path: '/about', component: () => import('../pages/About.vue') },
   ]
 })
