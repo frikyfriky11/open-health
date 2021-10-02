@@ -10,11 +10,11 @@
   <p class="mt-2 mb-6 text-gray-500">Select the emoji that best represents your current mood.</p>
 
   <form class="flex gap-2 justify-center">
-    <button @click="saveMeasurement('😃')" class="rounded shadow p-3 bg-white text-3xl">😃</button>
-    <button @click="saveMeasurement('😐')" class="rounded shadow p-3 bg-white text-3xl">😐</button>
-    <button @click="saveMeasurement('😴')" class="rounded shadow p-3 bg-white text-3xl">😴</button>
-    <button @click="saveMeasurement('😢')" class="rounded shadow p-3 bg-white text-3xl">😢</button>
-    <button @click="saveMeasurement('😡')" class="rounded shadow p-3 bg-white text-3xl">😡</button>
+    <button @click.prevent="saveMeasurement('😃')" class="rounded shadow p-3 bg-white text-3xl">😃</button>
+    <button @click.prevent="saveMeasurement('😐')" class="rounded shadow p-3 bg-white text-3xl">😐</button>
+    <button @click.prevent="saveMeasurement('😴')" class="rounded shadow p-3 bg-white text-3xl">😴</button>
+    <button @click.prevent="saveMeasurement('😢')" class="rounded shadow p-3 bg-white text-3xl">😢</button>
+    <button @click.prevent="saveMeasurement('😡')" class="rounded shadow p-3 bg-white text-3xl">😡</button>
   </form>
 
   <h2 class="mt-8 mb-6 text-xl">Your last measurements</h2>

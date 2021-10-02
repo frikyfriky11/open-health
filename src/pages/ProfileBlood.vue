@@ -9,7 +9,7 @@
   <h2 class="mt-8 mb-6 text-xl">Measure your blood pressure</h2>
   <p class="mt-2 mb-6 text-gray-500">Make sure to wait 10 minutes to let your body relax before measuring your blood pressure.</p>
 
-  <form class="flex gap-2" @submit="saveMeasurement">
+  <form class="flex gap-2" @submit.prevent="saveMeasurement">
     <input type="number" class="flex-grow rounded text-xl p-2 w-24 shadow" placeholder="Systolic" v-model="newMeasurement.sys">
     <input type="number" class="flex-grow rounded text-xl p-2 w-24 shadow" placeholder="Diastolic" v-model="newMeasurement.dia">
     <input type="number" class="flex-grow rounded text-xl p-2 w-24 shadow" placeholder="BPM" v-model="newMeasurement.bpm">

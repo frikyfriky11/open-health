@@ -9,7 +9,7 @@
   <h2 class="mt-8 mb-6 text-xl">Measure your blood glucose</h2>
   <p class="mt-2 mb-6 text-gray-500">Avoid measuring your glucose levels after eating large amounts of sugar.</p>
 
-  <form class="flex gap-2" @submit="saveMeasurement">
+  <form class="flex gap-2" @submit.prevent="saveMeasurement">
     <input type="number" class="flex-grow rounded text-xl p-2 w-24 shadow" placeholder="Blood glucose" v-model="newMeasurement.glucose">
     <button type="submit" class="bg-blue-500 text-gray-50 px-4 rounded shadow">&gt;</button>
   </form>
