@@ -22,7 +22,7 @@
       </template>
     </fieldset>
 
-    <input type="submit" value="Submit" class="mt-4 rounded-lg text-xl w-full border p-2 shadow bg-blue-500 text-gray-50">
+    <input type="submit" value="Submit" class="mt-4 font-bold rounded-lg text-xl w-full border p-2 shadow bg-blue-500 text-gray-50">
   </form>
 
   <div v-else class="bg-green-500 text-gray-50 p-4 rounded-lg shadow mt-8">
